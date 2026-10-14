@@ -7,16 +7,19 @@
 <meta name="description" content="2027 사이판 부모동반 영어캠프 온라인 참가 신청서. 학생 정보·여권 사본·항공편 접수, 6단계 등록 진행 안내, 예약금·취소/환불·여행자 보험 핵심 약관.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0B4744">
-<link rel="canonical" href="https://0712.pplx.app/apply.html">
+<link rel="canonical" href="https://www.SaipanEnglish.com/apply.html">
+<link rel="alternate" hreflang="ko" href="https://www.SaipanEnglish.com/apply.html">
+<link rel="alternate" hreflang="zh" href="https://www.SaipanEnglish.com/zh/apply.html">
+<link rel="alternate" hreflang="ja" href="https://www.SaipanEnglish.com/ja/apply.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="사이판 영어캠프">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:url" content="https://0712.pplx.app/apply.html">
+<meta property="og:url" content="https://www.SaipanEnglish.com/apply.html">
 <meta property="og:title" content="2027 사이판 부모동반 영어캠프 참가 신청">
 <meta property="og:description" content="온라인으로 간편하게 참가 신청하세요. 등록 진행 안내와 핵심 약관 확인.">
-<meta property="og:image" content="https://0712.pplx.app/img/og_image.jpg">
+<meta property="og:image" content="https://www.SaipanEnglish.com/img/og_image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "사이판 영어캠프", "item": "https://0712.pplx.app/"}, {"@type": "ListItem", "position": 2, "name": "캠프 참가 신청", "item": "https://0712.pplx.app/apply.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "사이판 영어캠프", "item": "https://www.SaipanEnglish.com/"}, {"@type": "ListItem", "position": 2, "name": "캠프 참가 신청", "item": "https://www.SaipanEnglish.com/apply.html"}]}</script>
 <link rel="icon" type="image/png" href="img/logo_sec_circle.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
@@ -44,6 +47,18 @@ b,strong{font-weight:800}
 .btn-red{background:var(--red);color:#fff;box-shadow:0 8px 20px rgba(224,48,42,.3)}
 .btn-line{border:2px solid rgba(255,255,255,.6);color:#fff}
 @media(max-width:900px){.menu{display:none}}
+.langswitch{position:relative;flex:none}
+.langbtn{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.35);color:#fff;font:inherit;font-weight:800;font-size:14px;padding:9px 14px;border-radius:999px;cursor:pointer}
+.langbtn:hover{background:rgba(255,255,255,.2)}
+.langbtn i{font-size:11px;opacity:.8}
+.langmenu{position:absolute;top:calc(100% + 10px);right:0;min-width:150px;background:#fff;border-radius:16px;box-shadow:0 14px 40px rgba(0,0,0,.22);padding:6px;z-index:80;display:none}
+.langswitch.open .langmenu{display:block}
+.langmenu li{list-style:none}
+.langmenu a{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:11px;color:var(--ink);font-weight:700;font-size:15px}
+.langmenu a:hover{background:var(--mint-bg);color:var(--teal)}
+.langmenu li[aria-selected=true] a{color:var(--teal);font-weight:900}
+.langmenu li[aria-selected=true] a::before{content:"✓";color:var(--teal);font-weight:900}
+@media(max-width:900px){.langbtn span{display:none}.langbtn{padding:9px 11px}}
 
 /* hero */
 .hero{position:relative;overflow:hidden;color:#fff;text-align:center;background:radial-gradient(ellipse at 50% 25%,var(--teal3),var(--teal) 55%,#08332F);padding:36px 0 110px}
@@ -389,6 +404,17 @@ button.btn{border:0;cursor:pointer;font-family:inherit}
       <span>사이판 부모동반 영어캠프<small>2027 WINTER · PIC × NMIS</small></span>
     </a>
     <div class="menu"><a href="index.html">캠프 소개</a><a href="index.html#guide">모집요강</a><a href="index.html#seminar">설명회</a></div>
+    <div class="langswitch">
+      <button type="button" class="langbtn" aria-haspopup="listbox" aria-expanded="false" aria-label="언어 선택">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z" stroke="currentColor" stroke-width="2"/></svg>
+        <span>한국어</span><i aria-hidden="true">▾</i>
+      </button>
+      <ul class="langmenu" role="listbox" aria-label="언어 선택">
+        <li role="option" aria-selected="true"><a href="apply.html" hreflang="ko" lang="ko">한국어</a></li>
+        <li role="option"><a href="zh/apply.html" hreflang="zh" lang="zh">中文</a></li>
+        <li role="option"><a href="ja/apply.html" hreflang="ja" lang="ja">日本語</a></li>
+      </ul>
+    </div>
     <a class="btn btn-gold" href="#apply" data-tab-link="apply">캠프 신청하기</a>
   </div>
 </nav>
